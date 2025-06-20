@@ -1,4 +1,4 @@
-import { Section } from "./Section";
+import { Section } from "../Sections/Section";
 
 const skills = [
   { name: "Python", level: "90%" },

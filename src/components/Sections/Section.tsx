@@ -9,6 +9,7 @@ export interface Props {
   padding?: string;
   className?: string;
   center?: boolean;
+  useContainer?: boolean;
 }
 
 export const Section = ({
@@ -20,6 +21,7 @@ export const Section = ({
   padding = "py-12",
   className = "",
   center = false,
+  useContainer = true,
 }: Props) => {
   return (
     <section
@@ -31,13 +33,17 @@ export const Section = ({
         ${className}
       `}
     >
-      <div className="container mx-auto max-w-7xl px-4">
-        {title && <h2 className="text-3xl font-bold mb-2">{title}</h2>}
-        {subtitle && (
-          <p className="text-muted-foreground text-lg mb-6">{subtitle}</p>
-        )}
-        {children}
-      </div>
+      {useContainer ? (
+        <div className="container mx-auto max-w-7xl px-4">
+          {title && <h2 className="text-3xl font-bold mb-2">{title}</h2>}
+          {subtitle && (
+            <p className="text-muted-foreground text-lg mb-6">{subtitle}</p>
+          )}
+          {children}
+        </div>
+      ) : (
+        children
+      )}
     </section>
   );
 };

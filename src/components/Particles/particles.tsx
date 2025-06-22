@@ -34,7 +34,7 @@ const ParticlesComponent = (props ? : any) => {
   () => ({
     background: {
       color: {
-        value: "#292b37", // o "transparent" si quieres fondo transparente
+        value: "transparent", // o "transparent" si quieres fondo transparente
       },
     },
     "particles": {

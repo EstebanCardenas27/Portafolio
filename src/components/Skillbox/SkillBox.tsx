@@ -1,108 +1,57 @@
-import { RightColumn } from "./Rightcolumn";
-import { LeftColumn } from "./LeftColumn";
+import { Icon } from "@/components/Icons/Icon";
 
-const skills = [
-  {
-    title: "Python",
-    icon: "lucide:code",
-    description: "Expert level proficiency",
-    colSpan: 3,
-    rowSpan: 2,
-  },
-  {
-    title: "JavaScript",
-    icon: "lucide:file-code",
-    description: "Frontend & backend development",
-    colSpan: 3,
-    rowSpan: 2,
-  },
-  {
-    title: "React.js",
-    icon: "lucide:globe",
-    description: "UI Library",
-    colSpan: 2,
-    rowSpan: 2,
-  },
-  {
-    title: "SQL",
-    icon: "lucide:database",
-    description: "Database",
-    colSpan: 2,
-    rowSpan: 2,
-  },
-  {
-    title: "C++",
-    icon: "lucide:terminal",
-    description: "Systems programming",
-    colSpan: 2,
-    rowSpan: 2,
-  },
-  {
-    title: "Node.js",
-    icon: "lucide:server",
-    description: "Backend development",
-    colSpan: 3,
-    rowSpan: 2,
-  },
-  {
-    title: "UI/UX Design",
-    icon: "lucide:tv",
-    description: "Interface design & prototyping",
-    colSpan: 3,
-    rowSpan: 2,
-  },
-  {
-    title: "AI & Machine Learning",
-    icon: "lucide:git-branch",
-    description: "Model development & deployment",
-    colSpan: 3,
-    rowSpan: 2,
-  },
-  {
-    title: "Next.js",
-    icon: "lucide:code",
-    description: "React framework",
-    colSpan: 3,
-    rowSpan: 2,
-  },
-];
+export interface SkillProps {
+  title: string;
+  icon?: string;
+  description?: string;
+  colSpan?: number;
+  rowSpan?: number;
+  className?: string;
+}
 
-export const SkillBox = () => {
+export interface RightColumnProps {
+  skills: SkillProps[];
+}
+
+export const SkillBox = ({ skills }: RightColumnProps) => {
   return (
-    <section className="relative py-24 bg-primary overflow-hidden">      
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-teal-500/20 rounded-full filter blur-3xl opacity-30" />
-        <div className="absolute top-1/3 -left-20 w-72 h-72 bg-amber-500/20 rounded-full filter blur-3xl opacity-30" />
-        <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-rose-500/20 rounded-full filter blur-3xl opacity-30" />
+    <div className="relative rounded-lg bg-gradient-to-br from-[#2a606e] to-[#212738] backdrop-blur-sm border border-white/10">      
+      <div className="absolute inset-0 rounded-lg shadow-[0_0_2rem_rgba(107,114,128,1)] animate-pulse pointer-events-none z-0" ></div>
+      <div className  = "grid p-6 gap-4 grid-cols-6 auto-rows-min relative z-10" >
+        {skills.map((skill) => (
+          <div
+            key={skill.title}
+            style={{
+              gridColumn: skill.colSpan ? `span ${skill.colSpan}` : undefined,
+              gridRow: skill.rowSpan ? `span ${skill.rowSpan}` : undefined,
+            }}
+            className={`
+              flex flex-col justify-start p-4 min-h-[5rem] max-w-xs
+              rounded-lg border border-white/20 bg-white/10 shadow-md              
+              hover:scale-105
+              hover:shadow-purple-200 
+              ${skill.className ?? ""}
+            `}
+          >
+            <div className="flex items-center mb-1">
+              {skill.icon && (
+                <Icon
+                  name={skill.icon}
+                  width="20"
+                  height="20"
+                  className="w-5 h-5 mr-2 text-teal-400"
+                />
+              )}
+              <h3 className="text-xl text-white font-semibold animate-none">{skill.title}</h3>
+            </div>
+            {skill.description && (
+              <p className="text-sm text-gray-400 animate-none">
+                {skill.description}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
-      <div className="relative z-10 container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 py-12">
-          <LeftColumn           
-            welcomeText="Bienvenido a mi Portafolio"
-            title={
-              <>
-                  <span className="block">Hi, I'm</span>
-                  <span className="block mt-1 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-amber-400">
-                  Esteban
-                </span>
-              </>
-            }
-            subtitle="Web Developer"
-            description="Passionate about programming and software development with expertise in Python, JavaScript, and C++. Building modern web applications using Node.js, React.js, and Next.js. Freelancer specializing in AI-powered solutions."
-            buttons={[
-                {
-                  label: "Get in Touch",
-                  href: "/contact",
-                },
-                {
-                  label: "View Projects",
-                  href: "/projects",
-                },
-              ]}
-          />
-          <RightColumn skills={skills} />
-        </div>
-      </div>
-    </section>
+    </div>
   );
 };

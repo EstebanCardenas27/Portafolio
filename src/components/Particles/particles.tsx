@@ -30,7 +30,7 @@ const ParticlesComponent = (props ? : any) => {
   };
 
 
-  const options = useMemo(
+  const options : any = useMemo(
   () => ({
     background: {
       color: {
@@ -64,7 +64,7 @@ const ParticlesComponent = (props ? : any) => {
       }
     },
     "opacity": {
-      "value": 0.2,
+      "value": 0.6,
       "random": true,
       "anim": {
         "enable": false,
@@ -74,7 +74,7 @@ const ParticlesComponent = (props ? : any) => {
       }
     },
     "size": {
-      "value": 160,
+      "value": 100,
       "random": false,
       "anim": {
         "enable": true,

@@ -1,15 +1,17 @@
 import { Outlet } from "react-router-dom";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
-import ParticlesComponent from "@/components/Particles/particles"
+
 
 export default function Layout() {
   return (
-    <div className="relative flex flex-col min-h-screen bg-gradient-to-br from-[#0f172a] to-[#111827]">     
-      <ParticlesComponent id="particles"/>
-      <Header />
-      <main className="flex-grow relative z-10"><Outlet /></main>
+    <div className="flex flex-col min-w-screen min-h-screen bg-gradient-to-br from-[rgba(15,23,42,0.99)] to-[rgba(17,24,39,0.99)] ">
+      <Header />      
+      <main className="flex-grow ">
+        <Outlet />
+      </main>      
       <Footer />
     </div>
   );
 }
+

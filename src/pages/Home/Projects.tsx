@@ -8,34 +8,34 @@ import { ProjectCard } from "@/components/Cards/ProjectsCard";
 export const Projects = () => {
   return (
     <>
-      <Section className="py-24">
+      <Section>
         <Container className="flex flex-col items-center">
          <HeaderBlock
             badgeText   = "Proyectos"
-            title       = "Proyectos Destacados"
+            title       = "Implementaciones Destacadas"
             description = "Trabajos seleccionados que destacan mi capacidad técnica y enfoque profesional."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
             <ProjectCard
                 img="/assets/landingPage.png"
                 url="/proyecto/uno"
-                title="Sistema de reservas"
-                description="App para gestionar reservas en turismo local."   
-                tags={["React", "Tailwind", "Node.js"]}     
+                title="Sistema de Reservas"
+                description="Para negocios que trabajan con citas o reservas."   
+                tags={["Calendario", "Confirmación de Reserva", "Pago Online"]}     
              />
              <ProjectCard
-                img="/assets/landingPage.png"
+                img="/assets/Corporativo.png"
                 url="/proyecto/uno"
-                title="Sistema de reservas"
-                description="App para gestionar reservas en turismo local." 
-                tags={["React", "Tailwind", "Node.js"]}     
+                title="Sitio Web Corporativo"
+                description="Para empresas, fundaciones, negocios establecidos." 
+                tags={["Página de Inicio", "Quiénes Somos", "Servicios", "Contacto"]}     
              />
              <ProjectCard
-                img="/assets/landingPage.png"
+                img="/assets/ecommerce.png"
                 url="/proyecto/uno"
-                title="Sistema de reservas"
-                description="App para gestionar reservas en turismo local."   
-                tags={["React", "Tailwind", "Node.js"]}
+                title="E-commerce"
+                description="Para vender productos físicos o digitales."   
+                tags={["Carrito de Compras", "Pasarela de Pago", "Categorías"]}
              />
           </div>         
 

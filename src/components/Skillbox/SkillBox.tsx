@@ -16,8 +16,8 @@ export interface RightColumnProps {
 export const SkillBox = ({ skills }: RightColumnProps) => {
   return (
     <div className="relative rounded-lg bg-gradient-to-br from-[#2a606e] to-[#212738] backdrop-blur-sm border border-white/10">      
-      <div className="absolute inset-0 rounded-lg shadow-[0_0_2rem_rgba(107,114,128,1)] animate-pulse pointer-events-none z-0" ></div>
-      <div className  = "grid p-6 gap-4 grid-cols-6 auto-rows-min relative z-10" >
+      <div className="absolute inset-0 rounded-lg shadow-[0_0_2rem_rgba(107,114,128,1)] animate-pulse pointer-events-none " ></div>
+      <div className  = "grid p-6 gap-4 grid-cols-6 auto-rows-min relative" >
         {skills.map((skill) => (
           <div
             key={skill.title}
@@ -30,6 +30,7 @@ export const SkillBox = ({ skills }: RightColumnProps) => {
               rounded-lg border border-white/20 bg-white/10 shadow-md              
               hover:scale-105
               hover:shadow-purple-200 
+              transition-all duration-300 ease-in-out
               ${skill.className ?? ""}
             `}
           >

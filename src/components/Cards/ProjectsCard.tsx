@@ -22,36 +22,37 @@ export const ProjectCard = ({
   sourceCode     = "Código Fuente",
   tags           = [],
 }: Props) => (
-  <article className="flex flex-col border border-white/10 rounded-lg bg-[#101225] max-w-sm shadow-sm overflow-hidden">
+  <article className="flex flex-col h-full border border-white/10 rounded-lg bg-[#101225]  max-w-sm shadow-sm overflow-hidden">
     <a href={url} className="block overflow-hidden">
       <img
-        className="rounded-t-lg w-full object-cover transition-transform duration-300 ease-in-out hover:scale-120"
+        className="rounded-t-lg w-full transition-transform duration-300 ease-in-out hover:scale-120"
         src={img}
         alt={title}
       />
     </a>
-    <div className="p-5 flex flex-col gap-4">
-      <a href={url}>
-        <h5 className="text-2xl font-bold tracking-tight text-white">
-          {title}
-        </h5>
-      </a>
-      <p className="font-normal text-gray-400">{description}</p>     
-        {tags.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag, index) => (
-              <Badget key={index} className="!bg-[#22203b] !text-white">
-                {tag}
-              </Badget>
-            ))}
-          </div>
-        )}
-     
+    <div className="p-5 flex flex-col gap-4 flex-grow ">
+      <div className="flex flex-col space-y-4 h-56">
+        <a href={url}>
+          <h5 className="text-2xl font-bold text-white">
+            {title}
+          </h5>
+        </a>
+        <p className="h-20 font-normal text-gray-400">{description}</p>     
+          {tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {tags.map((tag, index) => (
+                <Badget key={index} className="!bg-[#22203b] !text-white" classNameContainer="!mb-0">
+                  {tag}
+                </Badget>
+              ))}
+            </div>
+        )};
+      </div>   
 
-      <div className="flex justify-between items-center mt-2">
+      <div className="flex justify-between items-center mt-auto">
         <a
           href={url}
-          className="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-400 transition-colors duration-200"
+          className="inline-flex items-center gap-2 font-medium text-teal-600 hover:text-teal-400 transition-colors duration-200"
         >
           {btnText}
           <Icon
@@ -63,7 +64,7 @@ export const ProjectCard = ({
         </a>
         <a
           href={url}
-          className="inline-flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-gray-200 transition-colors duration-200"
+          className="inline-flex items-center gap-2 font-medium text-gray-400 hover:text-gray-200 transition-colors duration-200"
           target="_blank"
           rel="noopener noreferrer"
         >          

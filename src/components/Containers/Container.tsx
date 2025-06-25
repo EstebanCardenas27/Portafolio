@@ -6,11 +6,11 @@ export interface Props {
 
 export const Container = ({
   className = "",
-  children
+  children,
 }: Props) => {
   return (
-    <div 
-      className={`px-2 w-[67.26%] ${className}`}
+    <div
+      className={`w-[80%] md:w-[67.26%] px-2 mx-auto  ${className}`}
     >
       {children}
     </div>

@@ -22,37 +22,44 @@ export const ProjectCard = ({
   sourceCode     = "Código Fuente",
   tags           = [],
 }: Props) => (
-  <article className="flex flex-col h-full border border-white/10 rounded-lg bg-[#101225]  max-w-sm shadow-sm overflow-hidden">
+  <article
+    className="w-[25rem] sm:max-w-md md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-full mx-auto flex flex-col h-full border border-white/10 rounded-lg bg-[#101225]  overflow-hidden">
     <a href={url} className="block overflow-hidden">
       <img
-        className="rounded-t-lg w-full transition-transform duration-300 ease-in-out hover:scale-120"
+        className="rounded-t-lg w-full transition-transform duration-300 ease-in-out hover:scale-110"
         src={img}
         alt={title}
       />
     </a>
-    <div className="p-5 flex flex-col gap-4 flex-grow ">
-      <div className="flex flex-col space-y-4 h-56">
-        <a href={url}>
-          <h5 className="text-2xl font-bold text-white">
-            {title}
-          </h5>
-        </a>
-        <p className="h-20 font-normal text-gray-400">{description}</p>     
-          {tags.length > 0 && (
-            <div className="flex flex-wrap gap-2">
-              {tags.map((tag, index) => (
-                <Badget key={index} className="!bg-[#22203b] !text-white" classNameContainer="!mb-0">
-                  {tag}
-                </Badget>
-              ))}
-            </div>
-        )};
-      </div>   
 
-      <div className="flex justify-between items-center mt-auto">
+    <div className="p-5 flex flex-col gap-4 flex-grow lg:items-start text-center ">
+      <div className="flex flex-col space-y-4 w-full">
+        <a href={url}>
+          <h5 className="text-lg md:text-2xl font-bold text-white">{title}</h5>
+        </a>
+        <p className="text-base md:text-base text-gray-400 lg:h-[4rem]">{description}</p>
+
+        {tags.length > 0 && (
+          <div className="flex flex-wrap gap-2 justify-center lg:justify-evenly lg:h-[5rem]">
+          {tags.map((tag, index) => (
+            <Badget
+              key={index}
+              className="!bg-[#22203b] !text-white"
+              classNameContainer="!mb-0"
+              animated={false}
+              pulse = {false}
+            >
+              {tag}
+            </Badget>
+          ))}
+          </div>
+        )}
+      </div>
+
+      <div className="flex w-full mt-auto">
         <a
           href={url}
-          className="inline-flex items-center gap-2 font-medium text-teal-600 hover:text-teal-400 transition-colors duration-200"
+          className="flex-1 flex items-center justify-center gap-2 font-medium text-xs md:text-base md:justify-start text-teal-600 hover:text-teal-400 transition-colors duration-200"
         >
           {btnText}
           <Icon
@@ -60,21 +67,21 @@ export const ProjectCard = ({
             width="14"
             height="14"
             className="text-inherit"
-          />          
+          />
         </a>
         <a
           href={url}
-          className="inline-flex items-center gap-2 font-medium text-gray-400 hover:text-gray-200 transition-colors duration-200"
+          className="flex-1 flex items-center justify-center gap-2 font-medium text-xs md:text-base md:justify-end text-gray-400 hover:text-gray-200 transition-colors duration-200"
           target="_blank"
           rel="noopener noreferrer"
-        >          
+        >
           <Icon
             name="uit:github-alt"
             width="14"
             height="14"
             className="text-inherit"
-          /> 
-          {sourceCode}         
+          />
+          {sourceCode}
         </a>
       </div>
     </div>

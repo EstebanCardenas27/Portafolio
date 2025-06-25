@@ -1,6 +1,8 @@
 import { ButtonLink } from "./ButtonLink";
+import { ButtonSub } from "./ButtonSub";
 
-export const Button = () => {
-    ButtonLink
+export {
+    ButtonLink,
+    ButtonSub
 }
 

@@ -14,7 +14,7 @@ export const Section = ({
   return (
     <section 
       id={id} 
-      className={`h-screen w-screen flex flex-col flex-wrap justify-center items-center md:flex-row ${className}`}
+      className={`min-h-screen flex flex-col justify-center items-center md:flex-row ${className}`}
     >
       {children}
     </section>

@@ -3,33 +3,37 @@ import { socialLinks } from "@/constants/socialLinks";
 
 export function Footer() {
   return (
-    <footer className="w-full py-8 flex flex-wrap justify-around md:px-0 px-4 z-50">
-      <div className="mb-6 md:mb-0">
-        <div className="text-2xl font-bold text-purple-500 mb-2 ">EC</div>
-        <p className="text-gray-400 text-sm max-w-md">
-          Creando soluciones digitales innovadoras con enfoque en código limpio,
-          eficiente y experiencias de usuario excepcionales.
-        </p>
-      </div>
-      <div className="flex flex-col items-center md:items-end">
-        <p className="font-medium mb-3 text-white self-center">Conecta conmigo</p>
-        <div className="flex space-x-4">
-          {socialLinks.map(({ href, icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              tabIndex={0}
-              className="group bg-[#22203b] p-3 rounded-full transition-transform duration-300 hover:scale-110"
-              aria-label={label}
-            >
-              <Icon name={icon} className="w-7 h-7 text-white group-hover:text-teal-400 transition-colors duration-300"/>
-            </a>
-          ))}
+    <footer className="w-full bg-[rgba(34,32,59,0.7)] backdrop-blur-md text-gray-300 py-8 px-6 md:px-20 select-none border-t border-white/10 z-50">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">    
+        <div className="text-center md:text-left max-w-md">
+          <div className="text-3xl font-bold text-purple-500 mb-2 select-text">EC</div>
+          <p className="text-sm leading-relaxed">
+            Creando soluciones digitales innovadoras con enfoque en código limpio, eficiente y experiencias de usuario excepcionales.
+          </p>
         </div>
-      </div>
-      <div className="w-full text-gray-400 text-sm text-center mt-10">
+        <div className="flex flex-col items-center md:items-end space-y-3">
+          <p className="font-medium text-white select-text">Conecta conmigo</p>
+          <div className="flex space-x-4">
+            {socialLinks.map(({ href, icon, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                tabIndex={0}
+                aria-label={label}
+                className="group bg-[#22203b] bg-opacity-70 p-3 rounded-full transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              >
+                <Icon
+                  name={icon}
+                  className="w-6 h-6 text-white group-hover:text-teal-400 transition-colors duration-300"
+                />
+              </a>
+            ))}
+          </div>
+        </div>        
+      </div>      
+      <div className="mt-10 text-center text-gray-400 text-sm select-text">
         © {new Date().getFullYear()} Esteban C. Todos los derechos reservados.
       </div>
     </footer>

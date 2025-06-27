@@ -20,16 +20,16 @@ export function Contact() {
             <div className="flex flex-col md:flex-row gap-8 md:gap-10">            
                 <div className="w-full md:w-1/2">                    
                     <ContactInfo />                     
-
-                    <div className="mt-5 gap-4 bg-[#22203b] p-4 rounded-2xl">
-                      <p className="text-base font-semibold text-teal-400 mb-2 ml-5 ">
-                        Tiempo de respuesta
-                      </p>
-                      <p className="text-base text-gray-300 leading-relaxed mb-2 ml-5">
-                        Normalmente respondo dentro de las 24 horas en días hábiles.
-                      </p>                    
-                    </div>
-
+                    <div className="w-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 bg-[#22203b] mt-5 rounded-2xl">
+                        <div className="bg-gray-800 gap-4 rounded-md p-1">
+                            <p className="text-base font-semibold pb-2  text-center md:text-left text-teal-400">
+                              Tiempo de respuesta
+                            </p>
+                            <p className="flex text-base text-center text-gray-300 leading-relaxed md:text-left">
+                              Normalmente respondo dentro de las 24 horas en días hábiles.
+                            </p>                    
+                        </div>
+                    </div>        
                 </div>            
                 <div className="w-full md:w-1/2">
                   <ContactForm />

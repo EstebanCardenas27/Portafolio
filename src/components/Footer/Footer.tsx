@@ -1,5 +1,5 @@
 import { Icon } from "@/components/Icons/Icon";
-import { socialLinks } from "@/constants/socialLinks";
+import { socialLinks } from "@/constants/Home/socialLinks";
 
 export function Footer() {
   return (
@@ -11,8 +11,8 @@ export function Footer() {
             Creando soluciones digitales innovadoras con enfoque en código limpio, eficiente y experiencias de usuario excepcionales.
           </p>
         </div>
-        <div className="flex flex-col items-center md:items-end space-y-3">
-          <p className="font-medium text-white select-text">Conecta conmigo</p>
+        <div className="flex flex-col items-center md:items-center space-y-3">
+          <p className="font-medium text-white select-text ">Conecta conmigo</p>
           <div className="flex space-x-4">
             {socialLinks.map(({ href, icon, label }) => (
               <a

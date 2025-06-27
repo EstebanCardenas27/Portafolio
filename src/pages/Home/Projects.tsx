@@ -3,7 +3,7 @@ import { HeaderBlock } from "@/components/Blocks/HeaderBlock";
 import { Icon } from "@/components/Icons/Icon";
 import { Container } from "@/components/Containers/Container";
 import { ButtonLink } from "@/components/Buttons/ButtonLink";
-import { ProjectCard } from "@/components/Cards/ProjectsCard";
+import { ProjectCard } from "@/components/Cards/Home/ProjectsCard";
 
 export const Projects = () => {
   return (
@@ -50,4 +50,3 @@ export const Projects = () => {
   );
 };
 
-//grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-screen-xl 2xl:max-w-screen-2xl mx-auto

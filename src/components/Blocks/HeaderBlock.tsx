@@ -44,7 +44,7 @@ export const HeaderBlock = ({
       {title && (
         <motion.h1
           {...fadeUp}
-          className={`text-2xl md:text-5xl lg:text-3xl font-bold text-emerald-400  ${classNameTitle}`}
+          className={`text-xl md:text-5xl lg:text-2xl font-bold text-emerald-400  ${classNameTitle}`}
         >
           {title}
         </motion.h1>
@@ -53,7 +53,7 @@ export const HeaderBlock = ({
       {subtitle && (
         <motion.h2
           {...fadeUp}
-          className={`text-lg md:text-4xl font-semibold text-gray-400 tracking-wide min-h-[2.5rem] ${classNameSubtitle}`}
+          className={`text-lg md:text-xl font-semibold text-gray-400 tracking-wide min-h-[2.5rem] ${classNameSubtitle}`}
         >
           {subtitle}
         </motion.h2>

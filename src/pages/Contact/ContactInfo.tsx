@@ -1,16 +1,16 @@
 import { Icon } from "@/components/Icons/Icon"; 
-import { socialLinks } from "@/constants/socialLinks";
+import { socialLinks } from "@/constants/Home/socialLinks";
 
 
 export const ContactInfo = () => {
   return (
-    <div className="w-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg bg-[#22203b] text-white">
+    <div className="w-full flex flex-col gap-4 p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg bg-[#22203b] text-white">
             
-      <h3 className="text-xl font-semibold text-start text-teal-400">
-        Informacion de contacto
+      <h3 className="text-xl font-semibold text-center md:text-left text-teal-400">
+        Información de contacto
       </h3>
       
-      <div className="flex items-center gap-4 rounded-md p-1 py-2 bg-[#1e1c31] transition-transform duration-300 hover:scale-105">
+      <div className="flex items-center gap-4 rounded-md p-1 py-2 bg-gray-800 transition-transform duration-300 hover:scale-105">
         <div className="w-10 h-10 flex items-center justify-center">
           <Icon name="ic:baseline-email" className="w-10 h-10 text-teal-400" />
         </div>
@@ -22,7 +22,7 @@ export const ContactInfo = () => {
         </div>
       </div>
  
-      <div className="flex items-start gap-4 rounded-md p-1 py-2 bg-[#1e1c31] transition-transform duration-300 hover:scale-105">
+      <div className="flex items-center gap-4 rounded-md p-1 py-2 bg-gray-800 transition-transform duration-300 hover:scale-105">
         <div className="w-10 h-10 flex items-center justify-center">
           <Icon
             name="material-symbols:location-on-outline" className="w-10 h-10 text-teal-400"
@@ -37,8 +37,8 @@ export const ContactInfo = () => {
       </div>
       
       <div>
-        <p className="text-xl font-semibold text-start text-teal-400 my-4">Redes sociales</p>
-        <div className="flex gap-4">
+        <p className="text-xl font-semibold text-center md:text-left text-teal-400 my-4">Redes sociales</p>
+        <div className="flex flex-wrap justify-center md:justify-start gap-4 ">
           {socialLinks.map(({ href, icon, label }) => (
             <a
               key={label}
@@ -46,7 +46,7 @@ export const ContactInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="group bg-[#1e1c31] p-3 rounded-lg transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="group bg-[#1e1c31] p-3 rounded-lg transition-transform duration-300 hover:scale-110 focus:outline-none hover:ring-2 hover:ring-teal-500"
             >
               <Icon
                 name={icon}

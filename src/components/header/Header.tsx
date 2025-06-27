@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import { navEnter } from "@/Utils/animations";
 import { Menu } from "lucide-react";
-import { routes } from "@/constants/routes";
+import { routes } from "@/constants/Routes/routes";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);

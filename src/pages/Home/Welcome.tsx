@@ -5,7 +5,7 @@ import { Section } from "@/components/Containers/Section";
 import { ButtonLink } from "@/components/Buttons/ButtonLink";
 import { Icon } from "@/components/Icons/Icon";
 import { HeaderBlock } from "@/components/Blocks/HeaderBlock";
-import { skills } from "@/constants/skills";
+import { skills } from "@/constants//Home/skills";
 import { SkillBox } from "@/components/Skillbox/SkillBox";
 import { motion } from "motion/react";
 import { zoomIn } from "@/Utils/animations";
@@ -58,11 +58,7 @@ export const Welcome = () => {
               </AnimatePresence>
             }
             classNameSubtitle="min-h-[2.5rem] text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-400"
-            description={
-              <p >
-                Apasionado por la programación y el desarrollo de software con experiencia en Python, JavaScript y C++. Construyo aplicaciones web modernas usando Node.js, React.js y Next.js. Freelancer especializado en soluciones impulsadas por IA.
-              </p>
-            }
+            description= "Apasionado por la programación y el desarrollo de software con experiencia en Python, JavaScript y C++. Construyo aplicaciones web modernas usando Node.js, React.js y Next.js. Freelancer especializado en soluciones impulsadas por IA."
             align="center"
             className="xl:items-start xl:text-left"
           />

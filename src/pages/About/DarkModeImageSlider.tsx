@@ -43,7 +43,7 @@ export function DarkModeImageSlider() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[400px] rounded-2xl overflow-hidden select-none"
+      className="relative w-full h-[400px] rounded-2xl overflow-hidden touch-none select-none"
       >
       
       <img
@@ -71,9 +71,11 @@ export function DarkModeImageSlider() {
         style={{ left: `${position}%` }}
       >
         
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                        w-8 h-8 rounded-full bg-sky-500 flex items-center justify-between px-1 
-                        text-white text-sm shadow-md pointer-events-none">
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-8 h-8 rounded-full bg-sky-500 flex items-center justify-center gap-1/2
+            text-white text-lg shadow-md"
+        >
           <span>←</span>
           <span>→</span>
         </div>

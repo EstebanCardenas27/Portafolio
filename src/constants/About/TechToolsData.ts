@@ -1,4 +1,12 @@
-export const TechToolsData = [
+export interface Skill {
+  name: string;
+  level: string;
+  icon: string;
+  gradient: string;
+  category: string;
+}
+
+export const TechToolsData: Skill[] = [
   // 🧠 Lenguajes de Programación
   {
     name: "Python",

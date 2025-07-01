@@ -10,7 +10,10 @@ export const ContactInfo = () => {
         Información de contacto
       </h3>
       
-      <div className="flex items-center gap-4 rounded-md p-1 py-2 bg-gray-800 transition-transform duration-300 hover:scale-105">
+      <a
+        href="mailto:EstebanCardenas2796@gmail.com"
+        className="flex items-center gap-4 rounded-md p-1 py-2 bg-gray-800 transition-transform duration-300 hover:scale-105"
+      >
         <div className="w-10 h-10 flex items-center justify-center">
           <Icon name="ic:baseline-email" className="w-10 h-10 text-teal-400" />
         </div>
@@ -20,12 +23,18 @@ export const ContactInfo = () => {
             EstebanCardenas2796@gmail.com
           </p>
         </div>
-      </div>
+      </a>
  
-      <div className="flex items-center gap-4 rounded-md p-1 py-2 bg-gray-800 transition-transform duration-300 hover:scale-105">
+      <a
+        href="https://www.google.com/maps/place/Mehuín,+Mariquina,+Región+de+Los+Ríos,+Chile"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-4 rounded-md p-1 py-2 bg-gray-800 transition-transform duration-300 hover:scale-105"
+      >
         <div className="w-10 h-10 flex items-center justify-center">
           <Icon
-            name="material-symbols:location-on-outline" className="w-10 h-10 text-teal-400"
+            name="material-symbols:location-on-outline"
+            className="w-10 h-10 text-teal-400"
           />
         </div>        
         <div className="flex-1">
@@ -34,7 +43,7 @@ export const ContactInfo = () => {
             Chile, Los Ríos, Valdivia, Mariquina, Mehuín
           </p>
         </div>
-      </div>
+      </a>
       
       <div>
         <p className="text-xl font-semibold text-center md:text-left text-teal-400 my-4">Redes sociales</p>

@@ -34,7 +34,7 @@ export const HeaderBlock = ({
   };
 
   return (
-    <div className={`w-full flex flex-col ${alignmentClasses[align]} gap-y-4 mb-12 ${className}`}>
+    <div className={`flex flex-col w-full ${alignmentClasses[align]} gap-y-4 mb-12 ${className}`}>
       {badgeText && (
         <motion.div {...fadeUp}>
           <Badget className={classNameBadge}>{badgeText}</Badget>
@@ -44,7 +44,7 @@ export const HeaderBlock = ({
       {title && (
         <motion.h1
           {...fadeUp}
-          className={`text-xl md:text-5xl lg:text-2xl font-bold text-emerald-400  ${classNameTitle}`}
+          className={`text-4xl lg:text-5xl font-semibold text-emerald-400 py-4 ${classNameTitle}`}
         >
           {title}
         </motion.h1>

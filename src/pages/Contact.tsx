@@ -17,8 +17,8 @@ export function Contact() {
             className = "!mb-2 md:!mb-12" 
            />
 
-            <div className="flex flex-col md:flex-row gap-8 md:gap-10">            
-                <div className="w-full md:w-1/2">                    
+            <div className="flex flex-col xl:flex-row gap-8 md:gap-10">            
+                <div className="w-full xl:w-1/2">                    
                     <ContactInfo />                     
                     <div className="w-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 bg-[#22203b] mt-5 rounded-2xl">
                         <div className="bg-gray-800 gap-4 rounded-md p-1">
@@ -31,7 +31,7 @@ export function Contact() {
                         </div>
                     </div>        
                 </div>            
-                <div className="w-full md:w-1/2">
+                <div className="w-full xl:w-1/2">
                   <ContactForm />
                 </div>
             </div>

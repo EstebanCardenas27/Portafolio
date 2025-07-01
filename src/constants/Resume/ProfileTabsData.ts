@@ -43,5 +43,5 @@ export const ProfileTabsData : Props[] =  [
     label     : "Certificaciones",
     icon      : "mdi:certificate",
     component : CertsPanel
-  },
+  },  
 ];

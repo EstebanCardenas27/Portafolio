@@ -10,8 +10,7 @@ export const Container = ({
 }: Props) => {
   return (
     <div
-      className={`w-[80%] md:w-[67.26%] px-2 mx-auto  ${className}`}
-    >
+      className={`w-[80%] md:w-[75%] max-w-7xl mx-auto ${className}`}>
       {children}
     </div>
   );

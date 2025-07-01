@@ -27,7 +27,7 @@ export const Badget = ({
   const content = (
     <span
       className={`
-        relative inline-block py-1 px-3 rounded-full text-xs font-light  
+        relative inline-block py-1 px-3  rounded-full text-xs font-light  
         bg-teal-500/10 text-teal-400 ${className}
       `}
     >
@@ -37,7 +37,7 @@ export const Badget = ({
   );
 
   return (
-    <div className={`mb-4 ${classNameContainer}`}>
+    <div className={`py-4 ${classNameContainer}`}>
       {animated ? (
         <motion.div {...blurIn}>
           {content}

@@ -100,3 +100,10 @@ export const navEnter = {
   transition: { duration: 1, ease: easeOut },
 };
 
+export const fadeRotate3D = {
+  initial: { opacity: 0, scale: 0.8, rotateX: -90 },
+  animate: { opacity: 1, scale: 1, rotateX: 0 },
+  exit: { opacity: 0, scale: 0.8, rotateX: 90 },
+  transition: { duration: 0.6, ease: easeInOut },
+};
+

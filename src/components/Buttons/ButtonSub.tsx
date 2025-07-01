@@ -31,7 +31,7 @@ export const ButtonSub = ({
     <button
       type={type}
       onClick={onClick}
-      className={`w-full px-6 py-3 rounded-lg font-medium transition-transform duration-300 transform inline-flex items-center justify-center gap-2 ${theme[variant]} ${className}`}
+      className={`w-full px-6 py-3 rounded-lg font-medium transition-transform duration-300 transform inline-flex items-center justify-center gap-2 cursor-pointer  ${theme[variant]} ${className}`}
     >
         {icon && iconPosition === "left" && (
             <Icon name={icon} className="w-5 h-5"/>

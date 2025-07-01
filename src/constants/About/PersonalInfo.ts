@@ -3,10 +3,10 @@ export const PersonalInfo = [
     title: "Intereses Personales",
     icon: "icon-park:personal-collection",
     items: [
-      "Explorar tecnologías aplicadas al mundo rural.",
-      "Resolver desafíos prácticos en negocios agrícolas.",
-      "Participar en proyectos de código abierto que ayuden a emprendedores.",
-      "Crear soluciones digitales accesibles para el campo.",
+      "Explorar tecnologías de vanguardia.",
+      "Enfrentar y resolver desafíos prácticos.",
+      "Participar en proyectos de código abierto.",
+      "Crear soluciones digitales accesibles.",
     ],
   },
   {

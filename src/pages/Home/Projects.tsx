@@ -4,49 +4,38 @@ import { Icon } from "@/components/Icons/Icon";
 import { Container } from "@/components/Containers/Container";
 import { ButtonLink } from "@/components/Buttons/ButtonLink";
 import { ProjectCard } from "@/components/Cards/Home/ProjectsCard";
+import {ProjectsCardData} from "@/constants/Projects/ProjectsCardData" 
 
 export const Projects = () => {
   return (
-    <Section className="py-24 md:py-32">
-      <Container>
-        <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
-            <HeaderBlock
-              badgeText="Proyectos"
-              title="Implementaciones Destacadas"
-              description="Trabajos seleccionados que destacan mi capacidad técnica y enfoque profesional."
-            />
+    <Section className="!py-16">
+      <Container>        
+        <div className="w-full max-w-7xl mx-auto flex flex-col items-center">            
+          <HeaderBlock
+            badgeText="Proyectos"
+            title="Implementaciones Destacadas"
+            description="Trabajos seleccionados que destacan mi capacidad técnica y enfoque profesional."
+          />
 
-            <div className="flex flex-wrap w-full max-w-screen-xl  gap-y-8 2xl:max-w-screen-2xl justify-between">
+          <div className="flex flex-wrap w-full max-w-screen-xl gap-y-10 2xl:max-w-screen-2xl justify-between">
+          {ProjectsCardData.map((feature, i) => (
               <ProjectCard
-                img="/assets/landingPage.png"
-                url="/proyecto/uno"
-                title="Sistema de Reservas"
-                description="Para negocios que trabajan con citas o reservas."
-                tags={["Calendario", "Confirmación de Reserva", "Pago Online"]}
+                key={i}               
+                img={feature.img || "/assets/default.png"}  
+                url={feature.url || "#"}
+                title={feature.title}
+                description={feature.description}  
+                tags={feature.tags}                
               />
-              <ProjectCard
-                img="/assets/Corporativo.png"
-                url="/proyecto/uno"
-                title="Sitio Web Corporativo"
-                description="Para empresas, fundaciones, negocios establecidos."
-                tags={["Página de Inicio", "Quiénes Somos", "Servicios", "Contacto"]}
-              />
-              <ProjectCard
-                img="/assets/ecommerce.png"
-                url="/proyecto/uno"
-                title="E-Commerce"
-                description="Para vender productos físicos o digitales."
-                tags={["Carrito de Compras", "Pasarela de Pago", "Categorías"]}
-              />
-            </div>
+            ))}
+          </div>
 
-            <ButtonLink className="flex items-center gap-2 mt-12">
-              Ver Proyectos
-              <Icon name="fa-solid:angle-right" width="16" height="16" />
-            </ButtonLink>
+          <ButtonLink className="flex items-center gap-2 mt-12">
+            Ver Proyectos
+            <Icon name="fa-solid:angle-right" width="16" height="16" />
+          </ButtonLink>
         </div>
-      </Container>      
+      </Container>
     </Section>
   );
 };
-

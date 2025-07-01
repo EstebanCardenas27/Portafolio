@@ -9,8 +9,9 @@ import { zoomIn } from "@/Utils/animations";
 export const Banner = () => (
   <Section className="bg-[rgba(16,18,37,0.8)] min-h-[auto] md:min-h-[70vh] md:py-20"> 
     <motion.div {...zoomIn}>
-      <Container className="z-10 flex flex-col items-center p-10 md:p-20 rounded-lg bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-gray-900/60 backdrop-blur-lg border border-white/10">       
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#22203b] mb-6">
+      <Container className="z-10 flex flex-col items-center p-10 md:p-20 rounded-lg bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-gray-900/60 backdrop-blur-lg border border-white/10"
+      >       
+        <div className="w-16 h-16 flex z-20 items-center justify-center rounded-full bg-[#22203b] mb-6">
           <Icon
             name="solar:star-outline"
             width="40"
@@ -22,7 +23,7 @@ export const Banner = () => (
           title="Trabajemos juntos"
           description="Actualmente estoy disponible para trabajar como freelance y abierto a nuevas oportunidades. Si tienes un proyecto en mente o quieres colaborar, ¡Contáctame!"
         />        
-        <ButtonLink className="flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform">
+        <ButtonLink href="/contact" className="flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform">
           Contáctame
           <Icon
             name="fa-solid:angle-right"

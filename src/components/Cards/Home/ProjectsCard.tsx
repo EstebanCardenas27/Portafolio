@@ -23,7 +23,7 @@ export const ProjectCard = ({
   tags           = [],
 }: Props) => (
   <article
-    className="w-[25rem] sm:max-w-md md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-full mx-auto flex flex-col h-full border border-white/10 rounded-lg bg-[#101225]  overflow-hidden">
+    className="w-[20rem] sm:max-w-md md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-full mx-auto flex flex-col h-full border border-white/10 rounded-lg bg-[#101225]  overflow-hidden">
     <a href={url} className="block overflow-hidden">
       <img
         className="rounded-t-lg w-full transition-transform duration-300 ease-in-out hover:scale-110"
@@ -37,7 +37,7 @@ export const ProjectCard = ({
         <a href={url}>
           <h5 className="text-lg md:text-2xl font-bold text-white">{title}</h5>
         </a>
-        <p className="text-base md:text-base text-gray-400 lg:h-[4rem]">{description}</p>
+        <p className="text-base md:text-base text-gray-400 lg:h-[3rem]">{description}</p>
 
         {tags.length > 0 && (
           <div className="flex flex-wrap gap-2 justify-center lg:justify-evenly lg:h-[5rem]">
@@ -45,7 +45,7 @@ export const ProjectCard = ({
             <Badget
               key={index}
               className="!bg-[#22203b] !text-white"
-              classNameContainer="!mb-0"
+              classNameContainer="!py-0"
               animated={false}
               pulse = {false}
             >
@@ -59,7 +59,7 @@ export const ProjectCard = ({
       <div className="flex w-full mt-auto">
         <a
           href={url}
-          className="flex-1 flex items-center justify-center gap-2 font-medium text-xs md:text-base md:justify-start text-teal-600 hover:text-teal-400 transition-colors duration-200"
+          className="flex-1 flex items-center justify-start gap-2 font-medium text-xs md:text-base  text-teal-600 hover:text-teal-400 transition-colors duration-200"
         >
           {btnText}
           <Icon
@@ -71,7 +71,7 @@ export const ProjectCard = ({
         </a>
         <a
           href={url}
-          className="flex-1 flex items-center justify-center gap-2 font-medium text-xs md:text-base md:justify-end text-gray-400 hover:text-gray-200 transition-colors duration-200"
+          className="flex-1 flex items-center justify-end gap-2 font-medium text-xs md:text-base text-gray-400 hover:text-gray-200 transition-colors duration-200"
           target="_blank"
           rel="noopener noreferrer"
         >

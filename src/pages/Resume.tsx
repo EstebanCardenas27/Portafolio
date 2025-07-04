@@ -7,14 +7,13 @@ import { Tabs } from "@/components/Tabs/Tabs";
 
 export function Resume (){
   return(
-    <Section className="">
+    <Section>
       <Container>
-          <div className="">
+          <div>
               <HeaderBlock
                   badgeText="Resumen"
                   title="Experiencia Profesional"
-                  description="Creo soluciones web y sistemas automatizados para resolver necesidades reales en sectores con baja digitalización, ayudando a pequeños negocios y emprendedores a crecer con tecnología."
-                  // className = "!mb-12 md:!mb-12" 
+                  description="Creo soluciones web y sistemas automatizados para resolver necesidades reales en sectores con baja digitalización, ayudando a pequeños negocios y emprendedores a crecer con tecnología."                  
                   align="center"
               />
               <div className="flex justify-center py-10">
@@ -27,8 +26,7 @@ export function Resume (){
                       Descargar CV
                     </ButtonSub>
                   </a>                  
-              </div>                    
-             
+              </div> 
               <Tabs tabs={ProfileTabsData} initialKey="Skills" />
           </div>                
       </Container>

@@ -1,29 +1,29 @@
 import { Icon } from "@/components/Icons/Icon";
 
 export interface Props {
-    id?             : string;
-    name?           : string;
-    type?           : string;
-    label?          : string;
-    placeholder?    : string;
-    textarea?       : boolean;
-    className?      : string;
-    rows?           : number;
-    icon?           : string;
-} 
+  id?: string;
+  name?: string;
+  type?: string;
+  label?: string;
+  placeholder?: string;
+  textarea?: boolean;
+  className?: string;
+  rows?: number;
+  icon?: string;
+}
 
 export const Input = ({
-id,   
-name,
-type            = "text",
-label,
-placeholder,
-textarea        = false,
-className       =" ",
-rows            = 5,
-icon,
+  id,
+  name,
+  type = "text",
+  label,
+  placeholder,
+  textarea = false,
+  className = " ",
+  rows = 5,
+  icon,
 }: Props) => {
-    return (
+  return (
     <div className={`flex flex-col gap-2 ${className}`}>
       {label && (
         <label htmlFor={id} className="text-sm text-white">
@@ -54,7 +54,7 @@ icon,
           {icon && (
             <Icon
               name={icon}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 size-8"
+              className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400 size-8"
             />
           )}
           <input

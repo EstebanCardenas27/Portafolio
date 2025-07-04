@@ -5,10 +5,12 @@ import { Home }  from "@/pages/Home";
 import { About }  from "@/pages/About";
 import { Resume }  from "@/pages/Resume";
 import { Projects } from "@/pages/Projects";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>        
         <Route path="/" element = {<Layout />}>          
           <Route index element={<Home />} />

@@ -18,7 +18,7 @@ export function ResponsiveSkillSections({
   const [selected, setSelected] = useState(initialCategory);
 
   return (
-    <div className="w-full">      
+    <div className="w-full soft-glass-panel">      
       <div className="hidden md:block">
         <CategoryTabs
           categories={categories}

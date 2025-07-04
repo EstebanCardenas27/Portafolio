@@ -3,7 +3,7 @@ import { Icon } from "@/components/Icons/Icon";
 
 export function SkillsGrid({ data }: { data: typeof TechToolsData }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full bg-[#22203b] p-6 rounded-xl shadow-lg shadow-black/50">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full">
       {data.map((skill, index) => (
         <div
           key={index}

@@ -31,6 +31,6 @@ export const ProjectsCardData: Props[] = [
     title: "E-Commerce",
     description: "Para vender productos físicos o digitales.",
     tags: ["Carrito de Compras", "Pasarela de Pago", "Categorías"],
-    tag: ["IoT"],
+    tag: ["Blockchain"],
   },
 ];

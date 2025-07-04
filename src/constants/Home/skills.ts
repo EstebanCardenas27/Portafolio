@@ -1,23 +1,16 @@
 export const skills = [
   {
-    title: "Python",
-    icon: "lucide:code",
-    description: "Aprendizaje activo",
+    title: "Symfony",
+    icon: "fa-brands:symfony",
+    description: "Aprendizaje Activo",
     colSpan: 3,
     rowSpan: 2,
   },
   {
-    title: "JavaScript",
-    icon: "lucide:file-code",
-    description: "Frontend & Backend",
+    title: "Docker",
+    icon: "lucide:box",
+    description: "Desarrollo & Despliegue",
     colSpan: 3,
-    rowSpan: 2,
-  },
-  {
-    title: "React.js",
-    icon: "lucide:globe",
-    description: "Interfaces de usuario",
-    colSpan: 2,
     rowSpan: 2,
   },
   {
@@ -26,7 +19,14 @@ export const skills = [
     description: "Gestión de BD",
     colSpan: 2,
     rowSpan: 2,
-  },
+  }, 
+  {
+    title: "React.js",
+    icon: "lucide:globe",
+    description: "Interfaces de usuario",
+    colSpan: 2,
+    rowSpan: 2,
+  },  
   {
     title: "C++",
     icon: "lucide:terminal",
@@ -34,6 +34,13 @@ export const skills = [
     colSpan: 2,
     rowSpan: 2,
   },
+  {
+    title: "JavaScript",
+    icon: "lucide:file-code",
+    description: "Frontend & Backend",
+    colSpan: 3,
+    rowSpan: 2,
+  },  
   {
     title: "Node.js",
     icon: "lucide:server",
@@ -44,22 +51,16 @@ export const skills = [
   {
     title: "UI/UX Design",
     icon: "lucide:tv",
-    description: "Diseño y prototipado",
+    description: "Diseño & prototipado",
     colSpan: 3,
     rowSpan: 2,
   },
   {
-    title: "IA y Machine Learning",
-    icon: "lucide:git-branch",
-    description: "Desarrollo y despliegue de modelos",
+    title: "Automatización",
+    icon: "lucide:robot",  
+    description: "Procesos Organizacionales",
     colSpan: 3,
     rowSpan: 2,
   },
-  {
-    title: "Next.js",
-    icon: "lucide:code",
-    description: "Framework basado en React",
-    colSpan: 3,
-    rowSpan: 2,
-  },
+   
 ];

@@ -4,8 +4,8 @@ import { ButtonSub } from "@/components/Buttons/index";
 
 export const ContactForm = () => {
   return (
-    <form className="w-full h-full bg-[#22203b] p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg">
-      <div className="grid grid-cols-1 gap-6 text-gray-600">       
+    <form className="w-full h-full backdrop-blur border border-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg">
+      <div className="grid grid-cols-1 gap-6">       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Input
             id="name"
@@ -37,7 +37,7 @@ export const ContactForm = () => {
           rows={6}
           icon="ant-design:message-filled"
         />    
-        <div>
+        <div className="xl:">
           <ButtonSub
             type="submit"
             variant="primary"

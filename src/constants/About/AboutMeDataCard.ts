@@ -1,4 +1,4 @@
-export const PersonalInfo = [
+export const AboutMeDataCard = [
   {
     title: "Intereses Personales",
     icon: "icon-park:personal-collection",

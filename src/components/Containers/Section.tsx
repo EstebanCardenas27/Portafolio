@@ -16,7 +16,7 @@ export const Section = ({
   return (
     <section 
       id={id} 
-      className={`min-h-screen flex flex-col justify-center items-center 2xl:flex-row py-24 ${className}`}
+      className={`min-h-screen flex flex-col justify-center items-center  ${className}`}
       style={clipPath ? { clipPath, transition: "clip-path 0.3s ease" } : undefined}
     >
       {children}

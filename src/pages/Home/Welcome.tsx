@@ -31,7 +31,7 @@ export const Welcome = () => {
 
   return (
     <Section>
-      <Container className="flex flex-col xl:flex-row w-full ">
+      <Container className="flex flex-col xl:flex-row ">
         <div className="flex flex-col xl:w-1/2 ">
           <HeaderBlock
             badgeText="Bienvenido a mi Portafolio"
@@ -56,13 +56,13 @@ export const Welcome = () => {
               </AnimatePresence>
             }
             classNameSubtitle="min-h-[2.5rem] text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-400"
-            description= "Apasionado por la programación y el desarrollo de software con experiencia en Python, JavaScript y C++. Construyo aplicaciones web modernas usando Node.js, React.js y Next.js. Freelancer especializado en soluciones impulsadas por IA."
+            description= "Apasionado por la programación y el desarrollo de software con experiencia en React Native, JavaScript y C++. Construyo aplicaciones web modernas usando Node.js, React.js. Freelancer especializado en soluciones impulsadas por IA."
             align="center"
-            className="items-center text-center xl:items-start xl:text-left "
+            className="!py-2 px-2 items-center text-center xl:items-start xl:text-left"
           />
 
-          <div className="flex flex-wrap justify-center xl:justify-start gap-4">
-            <ButtonLink href="/contact" className="flex items-center gap-2">Contáctame
+          <div className="flex flex-wrap justify-center xl:justify-start gap-4 my-4">
+            <ButtonLink href="/contact" className="flex items-center gap-2 ">Contáctame
               <Icon name="fa-solid:angle-right" width="16" height="16" />
             </ButtonLink>
             <ButtonLink className="flex items-center" href="/projects" variant="secundary">Ver Proyectos</ButtonLink>

@@ -29,7 +29,7 @@ export const ProjectsFilterPanel = ({
           height="20"
           className="text-gray-400 mr-2"
         />
-        <span className="text-sm font-medium text-white mr-2">Filter:</span>
+        <span className="text-sm font-medium text-white mr-2">Filtros:</span>
         <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (
             <button

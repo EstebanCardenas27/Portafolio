@@ -1,7 +1,6 @@
 import type { FC } from "react";
 import { SkillsPanel } from "@/pages/Resume/Panels/SkillsPanel";
 import { EducationPanel } from "@/pages/Resume/Panels/EducationPanel";
-import { ProjectsPanel } from "@/pages/Resume/Panels/ProjectsPanel";
 import { ExperiencePanel } from "@/pages/Resume/Panels/ExperiencePanel";
 import { CertsPanel } from "@/pages/Resume/Panels/CertsPanel";
 
@@ -25,16 +24,10 @@ export const ProfileTabsData : Props[] =  [
     label     : "Educación",
     icon      : "mdi:school",
     component : EducationPanel
-  },
+  },  
   {
     key       : "Experience",
     label     : "Experiencia",
-    icon      : "mdi:briefcase",
-    component : ProjectsPanel
-  },
-  {
-    key       : "Projects",
-    label     : "Proyectos",
     icon      : "mdi:rocket",
     component : ExperiencePanel
   },

@@ -8,16 +8,16 @@ import {ProjectsCardData} from "@/constants/Projects/ProjectsCardData"
 
 export const Projects = () => {
   return (
-    <Section className="!py-16">
+    <Section className="">
       <Container>        
-        <div className="w-full max-w-7xl mx-auto flex flex-col items-center">            
+        <div className="flex flex-col items-center ">            
           <HeaderBlock
             badgeText="Proyectos"
-            title="Implementaciones Destacadas"
+            title="Destacados"
             description="Trabajos seleccionados que destacan mi capacidad técnica y enfoque profesional."
           />
 
-          <div className="flex flex-wrap w-full max-w-screen-xl gap-y-10 2xl:max-w-screen-2xl justify-between">
+          <div className="flex flex-wrap w-full max-w-screen-xl gap-x-4 gap-y-10 2xl:max-w-screen-2xl justify-between">
           {ProjectsCardData.map((feature, i) => (
               <ProjectCard
                 key={i}               
@@ -30,7 +30,7 @@ export const Projects = () => {
             ))}
           </div>
 
-          <ButtonLink className="flex items-center gap-2 mt-12">
+          <ButtonLink href="/projects" className="flex items-center my-15">
             Ver Proyectos
             <Icon name="fa-solid:angle-right" width="16" height="16" />
           </ButtonLink>

@@ -8,28 +8,22 @@ export const FeatureCard = () => {
         <article
           key={i}
           className="
-            flex flex-col
-            justify-center
-            items-center
-            text-center
-            border border-white/10
-            rounded-lg
-            p-4
-            bg-gray-900
-            transition-all duration-300 transform
-            hover:-translate-y-4
+            flex flex-col         
+            todo-Center  
+            glass-panel                       
+            bg-gradient-to-br from-white/10 to-white/5
             hover:shadow-[0_0_30px_rgba(15,118,100,0.3)]
             sm:w-[calc(50%-1.5rem)]
-            lg:w-[calc(33.333%-1rem)]
+            lg:w-[calc(33.333%-1rem)]            
           "
         >
-          <div className="flex justify-center items-center mb-6 w-16 h-16 rounded-lg bg-[#22203b]">
+          <div className="flex justify-center items-center soft-glass-panel mb-6 w-16 h-16 ">
             <Icon name={icon} className="text-teal-300 w-8 h-8" />
           </div>
-          <h3 className="mb-3 text-base min-h-[4rem] sm:text-lg md:text-xl font-bold text-white">
+          <h3 className="mb-3 text-base min-h-[3rem] sm:text-lg md:text-xl font-bold text-white">
             {title}
           </h3>
-          <p className="text-gray-400 min-h-[6rem] text-sm sm:text-base">
+          <p className="text-gray-400 min-h-[5rem] text-sm sm:text-base">
             {description}
           </p>
         </article>

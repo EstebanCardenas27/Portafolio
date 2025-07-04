@@ -7,11 +7,11 @@ import { motion } from "motion/react";
 import { zoomIn } from "@/Utils/animations";
 
 export const Banner = () => (
-  <Section className="bg-[rgba(16,18,37,0.8)] min-h-[auto] md:min-h-[70vh] md:py-20"> 
+  <Section className="bg-[rgba(16,18,37,0.7)] !min-h-[70vh]"> 
     <motion.div {...zoomIn}>
-      <Container className="z-10 flex flex-col items-center p-10 md:p-20 rounded-lg bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-gray-900/60 backdrop-blur-lg border border-white/10"
-      >       
-        <div className="w-16 h-16 flex z-20 items-center justify-center rounded-full bg-[#22203b] mb-6">
+      <Container className="flex flex-col items-center glass-panel"
+      >   
+        <div className="w-16 h-16 flex items-center justify-center rounded-full soft-glass-panel ">
           <Icon
             name="solar:star-outline"
             width="40"

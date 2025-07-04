@@ -1,5 +1,5 @@
 
-import { useBreakpoint } from "@/hooks/useBreackpoint";
+// import { useBreakpoint } from "@/hooks/useBreackpoint";
 import { Section } from "@/components/Containers/Section";
 import { Container } from "@/components/Containers/Container";
 import { FeatureCard } from "@/components/Cards/Home/FeaturedCard";
@@ -9,15 +9,13 @@ import { Icon } from "@/components/Icons/Icon";
 
 export const WhoIAm = () => {
 
-  const bp = useBreakpoint();
-  const clipPath =
-    bp && ["lg", "xl", "2xl"].includes(bp)
-      ? "polygon(50% 0%, 84% 12%, 100% 35%, 100% 70%, 83% 88%, 50% 100%, 18% 91%, 0% 70%, 0% 35%, 11% 13%)"
-      : undefined;
+  // const bp = useBreakpoint();
+  // const clipPath =
+  //   bp && ["lg", "xl", "2xl"].includes(bp)
+  //     ? "polygon(50% 0%, 84% 12%, 100% 35%, 100% 70%, 83% 88%, 50% 100%, 18% 91%, 0% 70%, 0% 35%, 11% 13%)"
+  //     : undefined;
   return (
-    <Section
-      className="bg-[rgba(16,18,37,0.9)]"
-      clipPath={clipPath}
+    <Section className="bg-[rgba(16,18,37,0.7)]" // clipPath={clipPath}
     >
       <Container className="flex flex-col items-center">
         <HeaderBlock
@@ -32,7 +30,7 @@ export const WhoIAm = () => {
 
         <ButtonLink
           href="/about"
-          className="flex items-center gap-2 mt-12"
+          className="flex items-center my-15"
         >
           Acerca de Mí
           <Icon name="fa-solid:angle-right" width="16" height="16" />

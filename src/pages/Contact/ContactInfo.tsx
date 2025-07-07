@@ -5,7 +5,7 @@ export const ContactInfo = () => {
   return (
     <div className="w-full flex flex-col gap-4 p-6 sm:p-8 md:p-10 rounded-2xl border border-white shadow-lg  backdrop-blur text-white">
       
-      <h3 className="text-xl font-semibold text-center md:text-left text-teal-400">
+      <h3 className="text-xl font-semibold text-center text-teal-400">
         Información de contacto
       </h3>
 
@@ -39,10 +39,10 @@ export const ContactInfo = () => {
       </a>
 
       <div>
-        <p className="text-xl font-semibold text-center xl:text-left text-teal-400 my-4">
+        <p className="text-xl font-semibold text-center text-teal-400 my-4">
           Redes sociales
         </p>
-        <div className="flex flex-wrap justify-center xl:justify-start gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {socialLinks.map(({ href, icon, label }) => (
             <a
               key={label}

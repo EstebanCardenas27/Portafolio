@@ -13,17 +13,17 @@ export const VantaBirds = () => {
   useEffect(() => {
     if (window.VANTA && window.VANTA.BIRDS && vantaRef.current) {
       vantaEffect.current = window.VANTA.BIRDS({
-        el: vantaRef.current,
-        backgroundColor: 0x101225,
+        el: vantaRef.current,  
+        backgroundColor: 0x0c123f,
         color1: 0x9511aa,
-        color2: 0xd1ff,
+        color2: 0x00d1ff,
         colorMode: "varianceGradient",
-        birdSize: 1.5,
+        birdSize: 1,
         speedLimit: 4.0,
         separation: 50.0,
         alignment: 20.0,
         cohesion: 20.0,
-        quantity: 4,
+        quantity: 3,
       });
     }
 

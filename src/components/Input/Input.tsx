@@ -10,6 +10,7 @@ export interface Props {
   className?: string;
   rows?: number;
   icon?: string;
+  error?: string;
 }
 
 export const Input = ({
@@ -22,12 +23,19 @@ export const Input = ({
   className = " ",
   rows = 5,
   icon,
+  error,
 }: Props) => {
   return (
     <div className={`flex flex-col gap-2 ${className}`}>
       {label && (
-        <label htmlFor={id} className="text-sm text-white">
+        <label
+          htmlFor={id}
+          className="text-sm text-white flex items-center gap-2"
+        >
           {label}
+          {error && (
+            <span className="text-red-500 text-xs">{error}</span>
+          )}
         </label>
       )}
 

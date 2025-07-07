@@ -24,8 +24,8 @@ export const ProjectCard = ({
   tags = [],
   showViewMoreButton = true,
 }: Props) => (
-  <details className="relative w-[20rem] group mx-auto flex flex-col h-full glass-panel overflow-hidden !p-2">
-    <div className="absolute inset-0 z-0 clip-shape bg-slate-600/15"></div>
+  <details className="relative w-[20rem] group mx-auto flex flex-col h-full transparent-effect overflow-hidden !p-2">
+    <div className="absolute inset-0 z-0 clip-shape bg-slate-600/15 pointer-events-none"></div>
     <summary className="cursor-pointer flex items-center justify-between px-2 py-3">
       <span className="text-lg md:text-xl font-semibold text-white">
         {title}
@@ -90,7 +90,7 @@ export const ProjectCard = ({
         )}
         <a
           href={url}
-          className="flex items-center justify-end gap-2 font-medium text-xs md:text-base text-gray-400 hover:text-gray-200 transition-colors duration-200"
+          className="flex items-center justify-end gap-2 font-medium text-xs md:text-base text-gray-400 hover:text-white transition-colors duration-200"
           target="_blank"
           rel="noopener noreferrer"
         >

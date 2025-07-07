@@ -1,8 +1,8 @@
 import type { FC } from "react";
-import { SkillsPanel } from "@/pages/Resume/Panels/SkillsPanel";
-import { EducationPanel } from "@/pages/Resume/Panels/EducationPanel";
-import { ExperiencePanel } from "@/pages/Resume/Panels/ExperiencePanel";
-import { CertsPanel } from "@/pages/Resume/Panels/CertsPanel";
+import { SkillsPanel } from "@/pages/Resume/SkillsPanel";
+import { EducationPanel } from "@/pages/Resume/EducationPanel";
+import { ExperiencePanel } from "@/pages/Resume/ExperiencePanel";
+import { CertsPanel } from "@/pages/Resume/CertsPanel";
 
 
 interface Props{

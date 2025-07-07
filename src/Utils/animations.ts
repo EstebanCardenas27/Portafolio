@@ -2,10 +2,10 @@ import { easeOut, easeIn, easeInOut, circOut, backOut } from "motion";
 
 // Fade hacia arriba
 export const fadeUp = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 50 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: easeOut },
-  viewport: { once: true, amount: 0.4 },
+  transition: { duration: 1, ease: easeOut },
+  viewport: { once: true, amount: 0.1},
 };
 
 // Fade hacia abajo
@@ -63,18 +63,18 @@ export const pulseLoop = {
 
 // Variantes para stagger group
 export const staggerContainer = {
-  hidden: {},
-  show: {
+  initial: {},
+  animate: {
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.25,
     },
   },
 };
 
 export const staggerItem = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, ease: backOut },
+  transition: { duration: 1, ease: backOut },
 };
 
 // Zoom suave desde el centro
@@ -87,7 +87,7 @@ export const zoomIn = {
 
 // Fade in con leve rotación
 export const fadeRotate = {
-  initial: { opacity: 0, rotate: -2 },
+  initial: { opacity: 0, rotate: 0 },
   whileInView: { opacity: 1, rotate: 0 },
   transition: { duration: 0.5, ease: easeOut },
   viewport: { once: true, amount: 0.4 },
@@ -107,3 +107,67 @@ export const fadeRotate3D = {
   transition: { duration: 0.6, ease: easeInOut },
 };
 
+export const parallax = (distance = 50) => ({
+  initial: { y: distance, opacity: 0 },
+  whileInView: { y: 0, opacity: 1 },
+  transition: { duration: 0.8, ease: easeOut },
+  viewport: { once: true, amount: 0.4 },
+});
+
+/**
+ * ============================
+ * GESTURES & HOVER EFFECTS
+ * ============================
+ */
+
+// Hover scale up
+export const hoverScale = {
+  whileHover: { scale: 0.9 },
+  transition: { duration: 0.3, ease: easeOut },
+};
+
+// Tap scale down
+export const tapScale = {
+  whileTap: { scale: 0.95 },
+  transition: { duration: 0.2, ease: easeInOut },
+};
+
+// Hover opacity flash
+export const hoverOpacity = {
+  whileHover: { opacity: 0.8 },
+  transition: { duration: 0.2, ease: easeOut },
+};
+
+// Ripple effect simulated with scale + opacity
+export const rippleEffect = {
+  whileTap: {
+    scale: [1, 1.4, 1],
+    opacity: [1, 0.5, 1],
+  },
+  transition: { duration: 0.6, ease: easeOut },
+};
+
+// Combined hover + tap for interactive cards
+export const interactiveCard = {
+  whileHover: { scale: 1.05, rotate: 360 },
+  whileTap: { scale: 0.98, rotate: -180 },
+  transition: { duration: 0.1, ease: easeOut },
+};
+
+// Wiggle animation for attention
+export const wiggle = {
+  animate: {
+    rotate: [-1, 1, -1, 1, 0],
+  },
+  transition: {
+    duration: 0.5,
+    ease: easeInOut,
+  },
+};
+
+// En tu archivo de animaciones
+export const flipY = {
+  initial: { rotateY: 0 },
+  animate: { rotateY: 180, transition: { duration: 0.7 } },
+  reset: { rotateY: 0, transition: { duration: 0.7 } }
+};

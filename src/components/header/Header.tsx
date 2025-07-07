@@ -11,7 +11,7 @@ export function Header() {
   const { pathname } = useLocation();
 
   const handleIsOpen = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   useEffect(() => {
@@ -28,15 +28,20 @@ export function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   return (
-    <motion.nav 
+    <motion.nav
       {...navEnter}
-      className="fixed w-full mx-auto flex items-center justify-between flex-wrap py-5 px-6 md:px-10 xl:px-[19.45rem] backdrop-blur z-50">
+      className="fixed w-full mx-auto flex items-center justify-between flex-wrap py-5 px-6 md:px-10 xl:px-[19.45rem] backdrop-blur z-50"
+    >
       <Link to="/" className="text-2xl font-bold text-purple-700 shrink-0">
         EC
       </Link>
 
-      <button className="md:hidden " onClick={handleIsOpen}>
+      <button className="md:hidden" onClick={handleIsOpen}>
         <Menu className="w-6 h-6 text-white" />
       </button>
 
@@ -50,8 +55,11 @@ export function Header() {
           <Link
             key={link.href}
             to={link.href}
+            onClick={() => setIsOpen(false)}
             className={`${
-              pathname === link.href ? "text-purple-600 after:w-full" : "text-white"
+              pathname === link.href
+                ? "text-purple-600 after:w-full"
+                : "text-white"
             } mx-auto relative text-sm font-medium transition-colors duration-300
               hover:text-purple-600 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-0.5
               after:bg-purple-600 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:rounded`}

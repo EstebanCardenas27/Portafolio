@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CategoryTabs } from "@/components/Tabs/CategoryTabs";
-import { CategoryAccordion } from "@/components/Tabs/CategoryAccordion";
+import { CategoryTabs } from "@/components/Tabs/Resume/CategoryTabs";
+import { CategoryAccordion } from "@/components/Tabs/Resume/CategoryAccordion";
 import { SkillsGrid } from "@/pages/About/SkillGrid";
 import type { Skill } from "@/constants/About/TechToolsData";
 
@@ -18,8 +18,8 @@ export function ResponsiveSkillSections({
   const [selected, setSelected] = useState(initialCategory);
 
   return (
-    <div className="w-full soft-glass-panel">      
-      <div className="hidden md:block">
+    <div className="w-full transparent-effect py-6 px-6">      
+      <div className="hidden lg:block">
         <CategoryTabs
           categories={categories}
           selected={selected}

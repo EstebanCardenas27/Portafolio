@@ -14,7 +14,7 @@ export const CategoryTabs = ({
       <button
         key={cat.key}
         onClick={() => onSelect(cat.key)}
-        className={`px-5 py-2 rounded-full border text-sm font-medium transition-all duration-300
+        className={`px-5 py-2 rounded-full border text-sm font-medium transition-all duration-300 cursor-pointer
           ${
             selected === cat.key
               ? "bg-gradient-to-r from-cyan-500 to-teal-800 text-black shadow-md"

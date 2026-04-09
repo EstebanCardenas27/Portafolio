@@ -26,7 +26,7 @@ export const CertificateCard: React.FC<Props> = ({ certificate }) => {
       {...fadeUp}
       className="certificate-card w-[300px] h-[200px] lg:w-[400px] lg:h-[300px]"
     >
-      <div className="card-inner">
+      <div className="card-inner cursor-pointer">
 
         <div className="card-front">
           <img

@@ -46,8 +46,7 @@ export const Projects = () => {
       />
 
       <Section className="relative w-full overflow-hidden !py-10 !lg:py-0 mb-20">
-        <Container>
-          {/* HeaderBlock no lo tocamos, ya tiene sus animaciones */}
+        <Container>          
           <HeaderBlock
             badgeText="Portafolio"
             title="Diseños de la Solución"
@@ -55,8 +54,7 @@ export const Projects = () => {
             align="center"
             classNameBadge="!bg-violet-500 !opacity-80 !text-white"
           />
-
-          {/* Animación de entrada del filtro */}
+          
           <motion.div {...fadeUp}>
             <ProjectsFilterPanel
               categories={ProjectsTabFiltersData}
@@ -92,7 +90,7 @@ export const Projects = () => {
                         url={feature.url || "#"}
                         title={feature.title}
                         description={feature.description}
-                        tags={feature.tags}
+                        tags={feature.tags}                        
                         showViewMoreButton={false}
                       />
                     </motion.div>

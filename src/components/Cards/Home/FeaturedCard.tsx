@@ -10,7 +10,7 @@ export const FeatureCard = () => {
   };
 
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-6">
+    <div className="flex w-full flex-wrap xl:h-50 items-center justify-center gap-6">
       {FeaturesData.map(({ icon, title, description }, i) => {
         const isOpen = openIndex === i;
 
@@ -25,7 +25,7 @@ export const FeatureCard = () => {
               flex flex-col w-full            
               max-w-90  
               min-w-78     
-              todo-Center  
+              xl:todo-Center  
               transarent-effect
               rounded-xl                                   
               bg-gradient-to-br from-white/10 to-white/5
@@ -36,8 +36,7 @@ export const FeatureCard = () => {
               transition-all duration-300 ease-in-out
               cursor-pointer
             `}
-          >
-            {/* Clip-path hover effect overlay */}
+          >            
             <div
               className="absolute inset-0 bg-gradient-to-tr from-teal-600/30 via-purple-600/40 to-pink-600/30 
                          clip-path-circle transition-[clip-path] duration-500 ease-in-out pointer-events-none"

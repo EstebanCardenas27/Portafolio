@@ -32,7 +32,10 @@ export function Footer() {
             ))}
           </div>
         </div>        
-      </div>      
+      </div>    
+      <div className="mt-12 flex justify-center">
+        <div className="w-300 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+      </div>  
       <div className="mt-10 text-center text-gray-400 text-sm ">
         © {new Date().getFullYear()} Esteban C. Todos los derechos reservados.
       </div>

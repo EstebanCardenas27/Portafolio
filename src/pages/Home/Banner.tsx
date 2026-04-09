@@ -20,8 +20,8 @@ export const Banner = () => (
           />
         </div>        
         <HeaderBlock
-          title="Trabajemos juntos"
-          description="Actualmente estoy disponible para trabajar como freelance y abierto a nuevas oportunidades. Si tienes un proyecto en mente o quieres colaborar, ¡Contáctame!"
+          title="Soluciones Digitales"
+          description="Desde el desarrollo hasta la implementación, participo activamente en proyectos empresariales junto a mi equipo. También puedes explorar mi trabajo técnico y experiencia en desarrollo web."
         />        
         <ButtonLink href="/contact" className="flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform">
           Contáctame

@@ -15,9 +15,21 @@ export const ButtonLink = ({
     children,    
 } : Props) => {
 
-    const theme         = {
-        "primary"       : "bg-teal-500 text-white  hover:scale-105 hover:shadow-[0_0_15px_rgba(20,184,166,0.7)]",
-        "secundary"     : "bg-[#22203b] text-white hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]",
+    const theme = {
+    primary: `
+        bg-teal-500 text-white
+        shadow-[0_0_10px_rgba(20,184,166,0.4)]
+        active:scale-95 active:shadow-[0_0_20px_rgba(20,184,166,0.8)]
+        md:hover:scale-105 md:hover:shadow-[0_0_20px_rgba(20,184,166,0.7)]
+        transition-all duration-300
+    `,
+    secundary: `
+        bg-[#22203b] text-white
+        shadow-[0_0_10px_rgba(255,255,255,0.25)]
+        active:scale-95 active:shadow-[0_0_20px_rgba(255,255,255,0.6)]
+        md:hover:scale-105 md:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
+        transition-all duration-300
+    `,
     };
 
     return (

@@ -32,7 +32,7 @@ export function AboutInfo() {
       {fullText.length > maxLength && (
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-emerald-400 font-medium hover:underline focus:outline-none"
+          className="text-emerald-400 font-medium hover:underline focus:outline-none cursor-pointer"
         >
           {expanded ? "Leer menos" : "Leer más"}
         </button>

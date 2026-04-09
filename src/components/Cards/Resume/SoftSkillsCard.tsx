@@ -101,7 +101,7 @@ export function SoftSkillsCard() {
                 setExpanded(false);
                 setFlippedIndex(null);
               }}
-              className="text-purple-400 border border-purple-400 px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-all duration-300"
+              className="text-purple-400 border border-purple-400 px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-all duration-300 cursor-pointer"
             >
               Ocultar
             </button>

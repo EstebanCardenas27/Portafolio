@@ -70,7 +70,7 @@ export const Welcome = () => {
               Contáctame
               <Icon name="fa-solid:angle-right" width="16" height="16" />
             </ButtonLink>
-            <ButtonLink href="/projects" variant="secundary" className="flex items-center">
+            <ButtonLink href="/projects" variant="secundary" className="flex items-center  ">
               Ver Proyectos
             </ButtonLink>
           </div>

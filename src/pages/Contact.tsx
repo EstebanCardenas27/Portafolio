@@ -57,7 +57,7 @@ export function Contact() {
                   <div className="mt-4 flex justify-center">
                     <button
                       onClick={() => setVisiblePanel(null)}
-                      className="px-4 py-2 soft-glass-panel hover:bg-teal-500 text-white"
+                      className="px-4 py-2 soft-glass-panel hover:bg-teal-500 text-white cursor-pointer"
                     >
                       Volver
                     </button>
@@ -78,7 +78,7 @@ export function Contact() {
                   <div className="mt-4 flex justify-center">
                     <button
                       onClick={() => setVisiblePanel(null)}
-                      className="px-4 py-2 soft-glass-panel hover:bg-purple-600 text-white"
+                      className="px-4 py-2 soft-glass-panel hover:bg-purple-600 text-white cursor-pointer"
                     >
                       Volver
                     </button>

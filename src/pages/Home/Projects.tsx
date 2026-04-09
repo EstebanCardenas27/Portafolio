@@ -31,7 +31,7 @@ export const Projects = () => {
                 url={feature.url || "#"}
                 title={feature.title}
                 description={feature.description}
-                tags={feature.tags}
+                tags={feature.tags}                
               />
             ))}
           </motion.div>

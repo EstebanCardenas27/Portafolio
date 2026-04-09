@@ -42,7 +42,7 @@ export const ProjectsFilterPanel = ({
               onClick={() => onSelect(cat.key)}
               aria-pressed={selected === cat.key}
               className={clsx(
-                "px-3 py-1.5 text-xs font-medium rounded-full transition-colors",
+                "px-3 py-1.5 text-xs font-medium rounded-full transition-colors cursor-pointer",
                 selected === cat.key
                   ? "bg-gradient-to-r from-cyan-500 to-teal-800 text-black"
                   : "bg-white/10 text-gray-300 hover:bg-white/20"

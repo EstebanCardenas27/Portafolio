@@ -29,7 +29,7 @@ export function Resume() {
           transition={{ ...fadeUp.transition, delay: 0.4 }}
           className="flex justify-center mb-10"
         >
-          <a href="/docs/CV_EstebanC.pdf" download>
+          <a  href={`${import.meta.env.BASE_URL}docs/CV_EstebanC.pdf`} download>
             <ButtonSub
               icon="line-md:download-loop"
               variant="primary"

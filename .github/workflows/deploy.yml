@@ -1,5 +1,4 @@
-name: Deploy React Vite to GitHub Pages
-
+name: Portafolio Esteban Cárdenas
 on:
   push:
     branches:

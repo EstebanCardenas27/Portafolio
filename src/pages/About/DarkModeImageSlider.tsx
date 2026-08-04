@@ -47,14 +47,14 @@ export function DarkModeImageSlider() {
       >
       
       <img
-        src="/assets/black.png"
+        src={`${import.meta.env.BASE_URL}assets/black.png`}
         alt="Dark profile"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
       
       <img
-        src="/assets/white.jpg"
+        src={`${import.meta.env.BASE_URL}assets/white.jpg`}
         alt="Light profile"
         className="absolute inset-0 w-full h-full object-cover"
         style={{

@@ -82,7 +82,7 @@ export function Resume() {
         playsInline
         className="fixed top-0 left-0 w-full h-full object-cover -z-20"
       >
-        <source src="/videos/resume.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}videos/resume.mp4`} />
       </video>
       <div className="fixed top-0 left-0 w-full h-full bg-black/60 -z-10"></div>
     </Section>

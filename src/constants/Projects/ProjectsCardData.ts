@@ -10,7 +10,7 @@ export interface Props {
 
 export const ProjectsCardData: Props[] = [
   {
-    img: "/assets/landingPage.png",
+    img: `${import.meta.env.BASE_URL}assets/landingPage.png`,
     url: "/proyecto/sistema-reservas",
     title: "Sistema de Reservas",
     description: "Para negocios que trabajan con citas o reservas.",
@@ -18,7 +18,7 @@ export const ProjectsCardData: Props[] = [
     tag: ["Web Development"]
   },
   {
-    img: "/assets/Corporativo.png",
+    img: `${import.meta.env.BASE_URL}assets/Corporativo.png`,
     url: "/proyecto/sitio-corporativo",
     title: "Sitio Web Corporativo",
     description: "Para empresas, fundaciones, negocios establecidos.",
@@ -26,7 +26,7 @@ export const ProjectsCardData: Props[] = [
     tag: ["Blockchain"],
   },
   {
-    img: "/assets/ecommerce.png",
+    img: `${import.meta.env.BASE_URL}assets/ecommerce.png`,
     url: "/proyecto/e-commerce",
     title: "E-Commerce",
     description: "Para vender productos físicos o digitales.",

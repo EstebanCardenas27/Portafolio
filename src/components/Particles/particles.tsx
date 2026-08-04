@@ -22,13 +22,13 @@ const ParticlesComponent = (props: any) => {
       },
       particles: {
         number: {
-          value: 4, 
+          value: 4,
         },
         color: {
           value: "#121420",
         },
         shape: {
-          type: "polygon",
+          type: "polygon" as const,
           options: {
             polygon: {
               sides: 6,
@@ -42,7 +42,7 @@ const ParticlesComponent = (props: any) => {
           },
         },
         size: {
-          value: { min: 40, max: 100 }, // 🔥 rango como tu animación
+          value: { min: 40, max: 100 },
           animation: {
             enable: true,
             speed: 10,
@@ -50,14 +50,14 @@ const ParticlesComponent = (props: any) => {
           },
         },
         links: {
-          enable: false, 
+          enable: false,
         },
         move: {
           enable: true,
-          speed: 8, 
-          direction: "none",
+          speed: 8,
+          direction: "none" as const,
           outModes: {
-            default: "out", 
+            default: "out" as const,
           },
         },
       },

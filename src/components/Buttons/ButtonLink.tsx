@@ -6,12 +6,14 @@ export interface Props {
     variant?: "primary" | "secundary"
     children?: React.ReactNode | string;
     href?: string;   
+    target?: string;
 }
 
 export const ButtonLink = ({
     className           = "",
     variant             = "primary",
     href                = "#",
+    target,
     children,    
 } : Props) => {
 
@@ -32,9 +34,18 @@ export const ButtonLink = ({
     `,
     };
 
-    return (
+    return target ? (
+        <a
+            href={href}
+            target={target}
+            rel="noopener noreferrer"
+            className={`${theme[variant]} flex px-6 py-3 gap-4 font-medium transition-transform duration-300 rounded-lg transform items-center cursor-pointer ${className}`}
+        >
+            {children}
+        </a>
+    ) : (
         <Link
-            to={href}            
+            to={href}
             className={`${theme[variant]} flex px-6 py-3 gap-4 font-medium transition-transform duration-300 rounded-lg transform items-center cursor-pointer ${className}`}
         >
             {children}

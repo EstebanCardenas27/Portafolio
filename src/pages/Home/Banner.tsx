@@ -9,22 +9,27 @@ import { zoomIn } from "@/Utils/animations";
 export const Banner = () => (
   <Section className="bg-[rgba(16,18,37,0.7)] !min-h-[70vh]"> 
     <motion.div {...zoomIn}>
-      <Container className="flex flex-col items-center glass-panel"
-      >   
-        <div className="w-16 h-16 flex items-center justify-center rounded-full soft-glass-panel ">
+      <Container className="flex flex-col items-center glass-panel">
+        <div className="w-16 h-16 flex items-center justify-center rounded-full soft-glass-panel">
           <Icon
             name="solar:star-outline"
             width="40"
             height="40"
             className="text-teal-400 animate-[spin_4s_linear_infinite]"
           />
-        </div>        
+        </div>
+
         <HeaderBlock
-          title="Soluciones Digitales"
-          description="Desde el desarrollo hasta la implementación, participo activamente en proyectos empresariales junto a mi equipo. También puedes explorar mi trabajo técnico y experiencia en desarrollo web."
-        />        
-        <ButtonLink href="/contact" className="flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform">
-          Contáctame
+          title="Impulsa tu proyecto digital"
+          description="En CC Soluciones ayudamos a empresas y emprendedores a transformar sus ideas en soluciones digitales modernas, desde el diseño y desarrollo web hasta la implementación de plataformas personalizadas."
+        />
+
+        <ButtonLink
+          href="https://cc-soluciones.github.io/"
+          target="_blank"
+          className="flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform"
+        >
+          Conoce CC Soluciones
           <Icon
             name="fa-solid:angle-right"
             width="16"

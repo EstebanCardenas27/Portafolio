@@ -22,7 +22,7 @@ const ParticlesComponent = (props: any) => {
       },
       particles: {
         number: {
-          value: 4, // 👈 igual que tu config original
+          value: 4, 
         },
         color: {
           value: "#121420",
@@ -31,7 +31,7 @@ const ParticlesComponent = (props: any) => {
           type: "polygon",
           options: {
             polygon: {
-              sides: 6, // 🔥 hexágonos reales
+              sides: 6,
             },
           },
         },
@@ -50,14 +50,14 @@ const ParticlesComponent = (props: any) => {
           },
         },
         links: {
-          enable: false, // 👈 igual que tenías
+          enable: false, 
         },
         move: {
           enable: true,
-          speed: 8, // 👈 rápido como el tuyo
+          speed: 8, 
           direction: "none",
           outModes: {
-            default: "out", // 🔥 reemplazo de out_mode
+            default: "out", 
           },
         },
       },

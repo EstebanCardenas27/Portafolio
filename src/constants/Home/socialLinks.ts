@@ -5,7 +5,7 @@ export const socialLinks = [
         label   : "GitHub",
     },
     {
-        href    : "https://www.linkedin.com/in/estebanacardenasi",
+        href    : "https://www.linkedin.com/in/estebanacardenasi/",
         icon    : "mdi:linkedin",
         label   : "LinkedIn",
     },    

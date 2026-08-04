@@ -9,15 +9,15 @@ import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/Portafolio">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
     <ScrollToTop/>
       <Routes>        
         <Route path="/" element = {<Layout />}>          
           <Route index element={<Home />} />
-          <Route path="/contact" element={<Contact />} />            
-          <Route path="/about" element={<About />} />            
-          <Route path="/resume" element={<Resume />} />            
-          <Route path="/projects" element={<Projects />} />            
+          <Route path="contact" element={<Contact />} />            
+          <Route path="about" element={<About />} />            
+          <Route path="resume" element={<Resume />} />            
+          <Route path="projects" element={<Projects />} />            
         </Route>                             
       </Routes>
     </BrowserRouter>

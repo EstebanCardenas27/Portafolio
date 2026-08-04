@@ -2,7 +2,7 @@ name: Portafolio Esteban Cárdenas
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: read
